@@ -1,5 +1,5 @@
 {% set name = "sphinx-pythia-theme" %}
-{% set version = "2022.1.6" %}
+{% set version = "2022.1.11" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-pythia-theme-{{ version }}.tar.gz
-  sha256: 6977add810ec5074b61b33e3ff01d5d333f3f718d1a107f6c1a6b392eafa74e7
+  sha256: da11583b92edaf72634165ef4a948d6a889ab8174458ad87f763e5eaf8f93bb4
 
 build:
   number: 0
