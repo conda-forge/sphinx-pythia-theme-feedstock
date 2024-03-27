@@ -1,5 +1,5 @@
 {% set name = "sphinx-pythia-theme" %}
-{% set version = "2022.3.29" %}
+{% set version = "2024.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-pythia-theme-{{ version }}.tar.gz
-  sha256: 474fda030b374ecc170276cf40964653684e9c4c91e3471cffef9b1f59120b6e
+  sha256: 1237195acd71139978a6b4ff2a7c07fefb6bdb77163ba158d545b61cbb854198
 
 build:
   number: 0
@@ -18,10 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
   run:
-    - python >=3.8
-    - sphinx-book-theme >=0.1.7,<0.2
+    - python >=3.9
+    - sphinx-book-theme
 
 test:
   imports:
