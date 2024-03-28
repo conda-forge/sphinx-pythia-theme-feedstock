@@ -1,5 +1,5 @@
 {% set name = "sphinx-pythia-theme" %}
-{% set version = "2024.3.0" %}
+{% set version = "2024.3.1" %}
 
 
 package:
@@ -7,14 +7,14 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-pythia-theme-{{ version }}.tar.gz
-  sha256: 1237195acd71139978a6b4ff2a7c07fefb6bdb77163ba158d545b61cbb854198
+  url: https://github.com/ProjectPythia/{{ name }}/archive/v{{ version }}.tar.gz   # For building from a specific tag's tarball
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script:
-    - {{ PYTHON }} -m pip install . --find-links --no-index --ignore-installed --no-deps
+    - {{ PYTHON }} -m pip install . --find-links --no-index --ignore-installed --no-deps -vv
 
 requirements:
   host:
