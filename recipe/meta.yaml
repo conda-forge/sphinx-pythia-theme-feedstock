@@ -11,7 +11,7 @@ source:
   sha256: 1237195acd71139978a6b4ff2a7c07fefb6bdb77163ba158d545b61cbb854198
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,8 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - sphinx-book-theme
+    - sphinx >=5.0
+    - sphinx-book-theme >=1.0.0
 
 test:
   imports:
