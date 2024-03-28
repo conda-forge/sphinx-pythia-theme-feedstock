@@ -21,8 +21,8 @@ requirements:
     - python >=3.9
   run:
     - python >=3.9
-    - sphinx >= 5.0
-    - sphinx-book-theme >= 1.0.0
+    - sphinx >=5.0
+    - sphinx-book-theme >=1.0.0
 
 test:
   imports:
