@@ -14,7 +14,7 @@ build:
   number: 2
   noarch: python
   script:
-    - {{ PYTHON }} -m pip install --find-links . --no-index --ignore-installed --no-deps sphinx-pythia-theme
+    - {{ PYTHON }} -m pip install --find-links . --no-index --ignore-installed --no-deps
 
 requirements:
   host:
