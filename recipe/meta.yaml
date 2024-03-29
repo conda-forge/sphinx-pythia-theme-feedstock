@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ProjectPythia/{{ name }}/archive/refs/tags/{{ version }}.tar.gz   # For building from a specific tag's tarball
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-pythia-theme-{{ version }}.tar.gz
   sha256: d2739f7203643650436bc4ecd52838e824520265fc8e669363269503711eea9b
 
 build:
